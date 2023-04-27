@@ -28,9 +28,6 @@
     html{
         font-size: 80%;
     }
-    header{
-        padding: 0;
-    }
     nav{
         background-color: var(--main-bg);
         position: absolute;
@@ -67,9 +64,4 @@
     html{
         font-size: 90%;
     }
-}
-@media (max-width:1200px){
-  .cards{
-    width: 300px;
-  }
 }

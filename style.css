@@ -4,18 +4,19 @@
     --second-bg:#ffb703;
     --font-black:#000000;
 }
-.bi-list,
-.bi-x{
-    font-size: 2.5rem;
-    color: var(--font-clr);
-    display: none;
-    cursor: pointer;
-}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+  }
 html{
     font-size: 100%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 section{
     min-height: 100vh;
@@ -37,17 +38,24 @@ section{
 .content-name2{
     color: #000000;
 }
-
+.bi-list,
+.bi-x{
+    font-size: 2.5rem;
+    color: var(--font-clr);
+    display: none;
+    cursor: pointer;
+}
 /* Header Section */
 
 header{
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 100;
     background: var(--main-bg);
     display: flex;
     justify-content: space-between;
-    padding: 0px 2%;
 }
 .logo-section{
     padding: 1rem;
@@ -262,63 +270,42 @@ nav li a.active{
     text-align: justify;
     padding-top: 2rem;
 }
-/* Projects page
-.project-content{
-    padding: 3rem 10rem 0 10rem;
-    gap: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    transition: all 2s;
-} */
-
 
 /* Contact page */
 .contact-content{
     display: flex;
     justify-content: center;
     align-items: start;
-    gap: 2rem;
-    transition: all 2s;  
+    transition: all 2s; 
 }
-.contact-sec1{
-    padding: 2rem;
+.contact-section1{
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    gap: 3rem;
-    padding-left: 1rem;
+    gap: 2rem;
+    padding-top: 2rem;
 }
 .sec1-head{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+    gap: 2rem;
+    text-align: center;
 }
-.sec1-head p{
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+.sec1-head label{
+    margin-top: 2rem;
     color: var(--main-bg);
+    font-size: 18px;
 }
 .sec1-content{
-    width: 100px;
-    height: 100px;
-    background: var(--main-bg);
+    padding: 2rem;
+    background-color: var(--main-bg);
     color: var(--second-bg);
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2rem;
-    transition: 0.5s;
 }
 
 .contact-sec2{
+    margin-top: 2rem;
     padding: 3rem;
     border-radius: 20px;
     background: var(--main-bg);
