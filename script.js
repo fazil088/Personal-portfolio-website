@@ -1,7 +1,7 @@
 // Navbar toggle
 
 const menuIcon = document.querySelector('.bi-list')
-const navbar = document.querySelector('nav')
+const navbar = document.querySelector('.link-section')
 
 menuIcon.addEventListener('click',function(){
     navbar.classList.toggle("show-header")
@@ -34,18 +34,18 @@ let links = document.querySelectorAll('nav li a')
         menuIcon.classList.remove("bi-x")
     }
 
-    // Scroll Reveal
+    // // Scroll Reveal
 
     ScrollReveal({
         reset:true,
-        distance:"50px",
+        distance:"30px",
         duration: 1000,
         delay:100,
     })
 
-    ScrollReveal().reveal('.home-details,.content-name2,.quote-content,.card-2,.card-4,.contact-sec2,.replit',{origin:"right"})
-    ScrollReveal().reveal('.home-content img,.content-name1,.card-1,.card-3,.card-5,.github',{origin:"left"})
-    ScrollReveal().reveal('.sec1-head',{origin:"bottom"})
+    ScrollReveal().reveal('.home-details,.card-2,.card-4,.content-name2',{origin:"top"})
+    ScrollReveal().reveal('.sec1-head,.contact-sec2,.card-3,.quote-content',{origin:"bottom"})
+    ScrollReveal().reveal('.home-content img,.content-name1,.card-1,.card-5',{origin:"left"})
 
 
     //Form submitting and Reloading

@@ -22,40 +22,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-
-
     <!-- Header Section -->
     <header>
-        <div class="logo-section">
-            <h4><span>Muhammed</span> Fazil</h4>
-        </div>
-        <i class="bi bi-list"></i>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home" class="active">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#about">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="#skill">SKILLS</a>
-                    </li>
-                    <li>
-                        <a href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="row">
+            <div class="col-md-6 logo-section">
+                <div class="logo">
+                   <div class="logo-name">Muhammed</div>
+                   <div class="logo-name">Fazil</div>
+                </div>
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="col-md-6 link-section">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#home" class="active">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#skill">SKILLS</a>
+                        </li>
+                        <li>
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>  
     </header>
 
-
-
-
-    <!-- Home Section -->  
-        <section id="home">
+   
+        <section  id="home">
             <div class="home-content">
                 <div class="image-div">
-                    <img src="./images/blob.png" alt="">
+                    <img src="./images/blob.png" alt="" class="img-fluid ">
                 </div>
                 <div class="home-details">
                         <h2>Hi, I'am</h2>
@@ -66,15 +68,12 @@
             </div>
         </section>
 
-
-
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="about-content">
+   
+    <section  id="about">
+   
             <div class="container">
-                <div class="row mt-5">
-                    <div class="col-12">
+               
+                    <div>
                         <h6 class="content-name1">WHO AM I ?</h6>
                         <h6 class="content-name2">ABOUT ME</h6>
                     </div>
@@ -87,51 +86,47 @@
                             <a href="./images/Resume Muhammed Fazil P.pdf" download="Resume">HIRE ME</a>
                         </div>
                     </div>
-                </div>
+         
             </div>
-        </div>
+   
     </section>
 
 
-
-
-
-    <!-- Skill Section -->
-    <section id="skill">
-        <div class="skill-content">
+    <section  id="skill">
+       
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div>
                         <h6 class="content-name1">MY SPECIALITY</h6>
                         <h6 class="content-name2">SKILLS</h6>
                     </div>
                     <div class="container">
                         <div class="row skill-are">
-                            <div class="col-md-4 col-6">
+                            <div class="col-sm-4 col-12">
                                 <div class="skill card-1">
                                     <i class="skill-icon"><span class="bi-filetype-html"></span></i>
                                     <h4>HTML</h4>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-6">
+                            <div class="col-sm-4 col-12">
                                 <div class="skill card-2">
                                     <i class="skill-icon"><span class="bi-filetype-css"></span></i>
                                     <h4>CSS</h4>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-6">
+                            <div class="col-sm-4 col-12">
                                 <div class="skill card-3">
                                     <i class="skill-icon"><span class="bi-filetype-js"></span></i>
                                     <h4>JavaScript</h4>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-6">
+                            <div class="col-sm-4 col-12">
                                 <div class="skill card-4">
                                     <i class="skill-icon"><span class="bi-bootstrap"></span></i>
                                     <h4>Bootstrap</h4>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-12">
+                            <div class="col-sm-4 col-12">
                                 <div class="skill card-5">
                                     <i class="skill-icon"><span class="bi-git"></span></i>
                                     <h4>Git</h4>
@@ -150,73 +145,46 @@
                     </div>
                 </div>
             </div>
-        </div>
+      
     </section>
 
 
-
-
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact-content">
+    <section  id="contact">
+        
             <div class="container">
-                    <div>
+                <div class="row">
+                    <div >
                         <h6 class="content-name1">GET IN TOUCH</h6>
                         <h6 class="content-name2">CONTACT</h6>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 contact-section1">
-                                <div class="sec1-head">
-                                    <div class="sec1-content">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </div>
-                                    <label>9025098302</label>
+                    <div class="col-md-6 info-section"></div>
+                    <div class="col-md-6">
+                        <form class="contact-sec2" id="Submit-Form" method="post" action="">
+                                <div class="input-area">
+                                    <input name="name" class="contact-input" type="text" required>
+                                    <label for="">Your Name</label>
                                 </div>
-                                <div class="sec1-head">
-                                    <div class="sec1-content">
-                                        <i class="bi bi-envelope-at-fill"></i>
-                                    </div>
-                                    <label>fmhd4675@gmail.com</label>
+                                <div class="input-area">
+                                    <input name="email" class="contact-input" type="email" required>
+                                    <label for="">Your E-mail</label>
                                 </div>
-                                <div class="sec1-head">
-                                    <div class="sec1-content">
-                                        <i class="bi bi-geo-alt-fill"></i>
-                                    </div>
-                                    <label>Gudalur, TamilNadu, India <br>643207</label>
+                                <div class="input-area">
+                                    <input name="mobile number"  type="tel" class="contact-input" required>
+                                    <label for="">Mobile Number</label>
                                 </div>
-                        </div>
-                        <div class="col-md-6">
-                            <form class="contact-sec2" id="Submit-Form" method="post" action="">
                                     <div class="input-area">
-                                        <input name="name" class="contact-input" type="text" required>
-                                        <label for="">Enter Your Name</label>
-                                    </div>
-                                    <div class="input-area">
-                                        <input name="email" class="contact-input" type="email" required>
-                                        <label for="">Enter Your E-mail</label>
-                                    </div>
-                                    <div class="input-area">
-                                        <input name="mobile number"  type="tel" class="contact-input" required>
-                                        <label for="">Enter Mobile Number</label>
-                                    </div>
-                                        <div class="input-area">
-                                            <textarea name="message" class="contact-input" cols="30" rows="10"  required></textarea>
-                                            <label for="">Type your message</label>
-                                        </div>   
-                                        <button type="submit">Send Message</button>
-                            </form>
-                        </div>
+                                        <textarea name="message" class="contact-input" cols="30" rows="10"  required></textarea>
+                                        <label for="">Your message</label>
+                                    </div>   
+                                    <button type="submit">Send Message</button>
+                        </form>
                     </div>
+                </div>    
             </div>
-        </div>
     </section>
 
-
-
-   <footer>
-        <div class="row">
-            <div class="col-md-6 copyright">
+    <footer>
+            <div class="copyright">
                 <p>©️  
                     <span class="text-danger">
                         <script>
@@ -226,7 +194,7 @@
                     Muhammed Fazil | <span class="text-info">All</span> rights reserved
                 </p>
             </div>
-            <div class="col-md-6 icons-section">
+            <div class="icons-section">
                 <div class="icons">
                     <a href="#" class="icon icon-instagram">
                         <i class="bi-instagram"></i>
@@ -242,7 +210,6 @@
                     </a>
                 </div>
             </div>
-        </div>    
    </footer>
     <!-- script link -->
     <script src="script.js"></script>

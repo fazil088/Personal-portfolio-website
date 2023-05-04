@@ -12,12 +12,12 @@
     text-decoration: none;
     scroll-behavior: smooth;
     outline: none;
-    border: none;
   }
 html{
-    font-size: 100%;
     overflow-x: hidden;
+    font-size: 100%;
 }
+
 section{
     min-height: 100vh;
     padding: 4rem 0px 2rem;
@@ -40,52 +40,61 @@ section{
 }
 .bi-list,
 .bi-x{
-    font-size: 2.5rem;
+    font-size: 30px;
     color: var(--font-clr);
     display: none;
     cursor: pointer;
 }
 /* Header Section */
-
 header{
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 100;
-    background: var(--main-bg);
-    display: flex;
-    justify-content: space-between;
+    top: 0;
+    
 }
 .logo-section{
+    display: flex;
+    justify-content: space-between;
     padding: 1rem;
+    background-color: var(--main-bg);
 }
-.logo-section span{
+.logo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    font-family: 'Trirong',serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.logo-name:nth-child(1){
+    background-color: var(--second-bg);
+    padding-right: 5px;
+    border-radius: 10px;
     color: var(--main-bg);
-    background: var(--second-bg);
-    border-radius: 1rem;
-    padding: 0.5rem;
     letter-spacing: 2px;
-    font-weight: bold;
 }
-.logo-section h4{
-    font-family: 'Alice',serif;
-    font-size: 1.8rem;
-    font-weight: bold;
+.logo-name:nth-child(2){
+    padding-left: 5px;
+    border-radius:10px;
     color: var(--font-clr);
     letter-spacing: 2px;
-    cursor: default;
+}
+.link-section{
+    padding: 1rem ;
+    background-color: var(--main-bg);
 }
 nav{
-    position: relative;
-    padding: 1rem;
+    float: right;
+    background-color: var(--main-bg);
+    padding-top: 10px;
 }
 nav li a{
     position: relative;
     text-decoration: none;
     color: var(--font-clr);
     font-family: 'Trirong',serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 1px;
     transition: 0.5s;
@@ -123,6 +132,7 @@ nav li a.active{
 }
 .home-content{
     height: 100vh;
+    width: 100%;
     background: var(--main-bg);
     display: flex;
     flex-direction: column;
@@ -134,8 +144,6 @@ nav li a.active{
 }
 .home-content img{
     transition: all 2s;
-    max-width: 100%;
-    height: auto;
 }
 .home-details{
     position: absolute;
@@ -167,12 +175,7 @@ nav li a.active{
 }
 
 /* About page */
-.about-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
+/*  */
 .about-para{
     font-family: 'Spartan',serif;
     font-size: 1.2rem;
@@ -228,13 +231,7 @@ nav li a.active{
 }
 
 /* Skill page */
-.skill-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    transition: all 2s;
-}
+/*  */
 
 .skill{
     border-radius: 10px;
@@ -272,37 +269,6 @@ nav li a.active{
 }
 
 /* Contact page */
-.contact-content{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    transition: all 2s; 
-}
-.contact-section1{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 2rem;
-}
-.sec1-head{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    text-align: center;
-}
-.sec1-head label{
-    margin-top: 2rem;
-    color: var(--main-bg);
-    font-size: 18px;
-}
-.sec1-content{
-    padding: 2rem;
-    background-color: var(--main-bg);
-    color: var(--second-bg);
-    font-size: 2rem;
-}
 
 .contact-sec2{
     margin-top: 2rem;
@@ -319,7 +285,7 @@ nav li a.active{
 }
 .input-area{
     position: relative;
-    width: 70%;
+    width: 80%;
 }
 .input-area input{
     width: 100%;
@@ -388,7 +354,6 @@ textarea{
 }
 
 /* Footer */
-
 .icons-section{
     display: grid;
     place-items: center;
