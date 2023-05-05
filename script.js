@@ -45,7 +45,7 @@ let links = document.querySelectorAll('nav li a')
 
     ScrollReveal().reveal('.home-details,.card-2,.card-4,.content-name2',{origin:"top"})
     ScrollReveal().reveal('.sec1-head,.contact-sec2,.card-3,.quote-content',{origin:"bottom"})
-    ScrollReveal().reveal('.home-content img,.content-name1,.card-1,.card-5',{origin:"left"})
+    ScrollReveal().reveal('.home-content img,.content-name1,.card-1,.card-5,.info-item',{origin:"left"})
 
 
     //Form submitting and Reloading

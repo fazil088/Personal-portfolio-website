@@ -20,7 +20,7 @@ html{
 
 section{
     min-height: 100vh;
-    padding: 4rem 0px 2rem;
+    padding: 5rem 0px 2rem;
 }
 
 
@@ -123,7 +123,7 @@ nav li a{
     text-decoration: none;
     color: var(--font-clr);
     font-family: 'Trirong',serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 1px;
     transition: 0.5s;
@@ -298,7 +298,47 @@ nav li a.active{
 }
 
 /* Contact page */
-
+.info-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-items{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+}
+.info-item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+.info-item div{
+    padding: 2rem;
+    background-color: var(--main-bg);
+    color: var(--second-bg);
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+.info-item a,
+.info-item p{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--main-bg);
+    font-family: 'Alice',serif;
+}
+.info-item a:hover{
+    color: var(--font-black);
+}
+.info-item:nth-child(3){
+    cursor: default;
+}
 .contact-sec2{
     margin-top: 2rem;
     padding: 3rem;
