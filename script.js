@@ -1,11 +1,11 @@
 // Navbar toggle
 
-const menuIcon = document.querySelector('.bi-list')
+const menuIcon = document.querySelector('.menuIcon')
 const navbar = document.querySelector('.link-section')
 
 menuIcon.addEventListener('click',function(){
     navbar.classList.toggle("show-header")
-    menuIcon.classList.toggle("bi-x")
+    menuIcon.classList.toggle("openMenu")
 })
 
 // Active tag in nab link
@@ -31,7 +31,7 @@ let links = document.querySelectorAll('nav li a')
             }
         })
         navbar.classList.remove("show-header")
-        menuIcon.classList.remove("bi-x")
+        menuIcon.classList.remove("openMenu")
     }
 
     // // Scroll Reveal

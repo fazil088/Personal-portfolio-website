@@ -50,8 +50,7 @@
     .show-header{
         transform: translateX(0);
     }
-    .bi-list,
-    .bi-x{
+    .menuIcon{
         display: block;
         margin-right: 1rem;
     }
