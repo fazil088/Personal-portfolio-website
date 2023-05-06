@@ -340,7 +340,6 @@ nav li a.active{
     cursor: default;
 }
 .contact-sec2{
-    margin-top: 2rem;
     padding: 3rem;
     border-radius: 20px;
     background: var(--main-bg);
